@@ -1,0 +1,37 @@
+.expand-icon {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background: #ececec;
+    border: 1px solid #ececec;
+    position: relative;
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        background-color: #ba4458;
+    }
+
+    &:before {
+        left: 3px;
+        top: 7px;
+        width: 10px;
+        height: 2px;
+    }
+
+    &:after {
+        left: 7px;
+        top: 3px;
+        width: 2px;
+        height: 10px;
+    }
+
+    &.expanded-icon {
+        border-color: #ba4458;
+
+        &:after {
+            display: none;
+        }
+    }
+}

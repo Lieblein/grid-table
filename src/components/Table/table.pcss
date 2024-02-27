@@ -1,0 +1,70 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    cursor: pointer;
+
+    &:last-child td,
+    &.last-table-customer td {
+        border-bottom-width: 1px;
+    }
+
+    &.table-customer {
+    }
+
+    &.hidden-tr {
+        visibility: collapse;
+    }
+}
+
+td {
+    padding: 10px 6px;
+    border: 1px solid #ececec;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    background-color: #fff;
+    transition:
+        .2s height,
+        .2s padding-top,
+        .2s padding-bottom,
+        .2s border-top-width,
+        .2s border-bottom-width,
+        .2s background-color;
+
+    &:first-child {
+        padding-left: 12px;
+        border-left-width: 1px;
+    }
+
+    &:last-child {
+        padding-right: 12px;
+        border-right-width: 1px;
+    }
+
+    &.table-name {
+        width: 100%;
+    }
+
+    &.table-revenue {
+        padding-right: 46px;
+    }
+
+    &.table-dot {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    tr:hover & {
+        background-color: transparent;
+    }
+
+    .hidden-tr & {
+        height: 0;
+        padding: 0;
+        border-width: 0;
+        visibility: hidden;
+    }
+}
