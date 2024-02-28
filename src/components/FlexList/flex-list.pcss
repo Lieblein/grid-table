@@ -1,0 +1,71 @@
+:root .interaction-item {
+    display: flex;
+    align-items: center;
+    gap: 52px;
+    padding: 10px 12px;
+    border: 1px solid #ececec;
+    border-bottom-width: 0;
+    background-color: #fff;
+    transition:
+        .2s height,
+        .2s padding-top,
+        .2s padding-bottom,
+        .2s border-top-width,
+        .2s border-bottom-width,
+        .2s background-color;
+
+    &:hover {
+        background-color: transparent;
+    }
+
+    &:last-child,
+    &.last-list-customer {
+        border-bottom-width: 1px;
+    }
+
+    &.hidden-interaction-item {
+        height: 0;
+        padding: 0;
+        border-width: 0;
+        visibility: hidden;
+    }
+}
+
+.list-main {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-grow: 1;
+}
+
+.list-name {
+    flex-grow: 1;
+}
+
+.list-pgm {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.expand-button {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    text-align: left;
+    width: 100%;
+    padding: 0;
+    cursor: pointer;
+}
+
+.interaction-item .project-name {
+    margin-left: 30px;
+}
+
+.list-money {
+    width: 90px;
+}
+
+.list-percent {
+    width: 40px;
+}
