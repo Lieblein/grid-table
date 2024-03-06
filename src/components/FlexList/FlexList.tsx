@@ -8,7 +8,7 @@ import './flex-list.pcss';
 
 /*
 + просто сделать
-+ свобода вёрстки
++ свобода вёрстки (padding & border на .interaction-item)
 + нативные button & link
 
 - фиксированная ширина

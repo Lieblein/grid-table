@@ -44,7 +44,7 @@ export function Table(props: IProps) {
                         return (
                             <React.Fragment key={ id }>
                                 <tr
-                                    className={ `table-customer ${isLastCustomer && !expanded ? 'last-table-customer' : ''}` }
+                                    className={ isLastCustomer && !expanded ? 'last-table-customer' : '' }
                                     onClick={ () => toggleExpandedCustomer(id) }
                                     tabIndex={ 0 }
                                 >

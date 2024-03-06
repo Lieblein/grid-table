@@ -1,3 +1,7 @@
+:root {
+    --transition-time: .2s;
+}
+
 body,
 html {
     color: #333;
@@ -36,7 +40,7 @@ html {
     border: 2px solid #ba4458;
     background-color: #ba4458;
     color: #fff;
-    transition: background-color .2s, color .2s;
+    transition: background-color var(--transition-time), color var(--transition-time);
     border-radius: 0;
     cursor: pointer;
     padding: 8px 16px;
