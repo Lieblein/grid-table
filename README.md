@@ -1,15 +1,3 @@
-# 🚀 Welcome to your new awesome project!
+# [DEMO](https://lieblein.github.io/grid-table/dist/)
 
-This project has been created using **webpack-cli**, you can now run
-
-```
-npm run build
-```
-
-or
-
-```
-yarn build
-```
-
-to bundle your application
+# [Презентация](https://docs.google.com/presentation/d/1-ksaPJ6fYLoC4U2upFdGz1nvAxoGo6byKXAMkFckQwY/edit#slide=id.p)
