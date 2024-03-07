@@ -16,7 +16,7 @@ const data: Record<DataType, ICustomer[]> = {
     [DataType.USUALLY]: [
         {
             id: 1,
-            name: 'Don Danon',
+            name: 'Рабочая мама',
             projects: [
                 {
                     id: 11,
@@ -62,7 +62,7 @@ const data: Record<DataType, ICustomer[]> = {
         },
         {
             id: 3,
-            name: 'ИП Овальный',
+            name: 'Друзейка',
             projects: [
                 {
                     id: 31,
@@ -80,7 +80,7 @@ const data: Record<DataType, ICustomer[]> = {
     [DataType.FEW]: [
         {
             id: 1,
-            name: 'Don Danon',
+            name: 'Рабочая мама',
             projects: [
                 {
                     id: 11,
@@ -126,7 +126,7 @@ const data: Record<DataType, ICustomer[]> = {
         },
         {
             id: 3,
-            name: 'ИП Овальный',
+            name: 'Друзейка',
             projects: [
                 {
                     id: 31,
@@ -144,7 +144,7 @@ const data: Record<DataType, ICustomer[]> = {
     [DataType.MANY]: [
         {
             id: 1,
-            name: 'Don Danon',
+            name: 'Рабочая мама',
             projects: [
                 {
                     id: 11,
@@ -190,7 +190,7 @@ const data: Record<DataType, ICustomer[]> = {
         },
         {
             id: 3,
-            name: 'ИП Овальный',
+            name: 'Друзейка',
             projects: [
                 {
                     id: 31,

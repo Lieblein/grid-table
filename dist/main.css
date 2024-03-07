@@ -1,0 +1,341 @@
+.expand-icon {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background: #ececec;
+    border: 1px solid #ececec;
+    position: relative;
+}
+
+    .expand-icon:before,
+    .expand-icon:after {
+        content: '';
+        position: absolute;
+        background-color: #ba4458;
+    }
+
+    .expand-icon:before {
+        left: 3px;
+        top: 7px;
+        width: 10px;
+        height: 2px;
+    }
+
+    .expand-icon:after {
+        left: 7px;
+        top: 3px;
+        width: 2px;
+        height: 10px;
+    }
+
+    .expand-icon.expanded-icon {
+        border-color: #ba4458;
+    }
+
+    .expand-icon.expanded-icon:after {
+            display: none;
+        }
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    cursor: pointer;
+}
+
+tr:last-child td,
+    tr.last-table-customer td {
+        border-bottom-width: 1px;
+    }
+
+tr.hidden-tr {
+        visibility: collapse;
+    }
+
+td {
+    padding: 10px 6px;
+    border: 1px solid #ececec;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    background-color: #fff;
+    transition:
+        var(--transition-time) height,
+        var(--transition-time) padding-top,
+        var(--transition-time) padding-bottom,
+        var(--transition-time) border-top-width,
+        var(--transition-time) border-bottom-width,
+        var(--transition-time) background-color;
+}
+
+td:first-child {
+        padding-left: 12px;
+        border-left-width: 1px;
+    }
+
+td:last-child {
+        padding-right: 12px;
+        border-right-width: 1px;
+    }
+
+td.table-name {
+        width: 100%;
+    }
+
+td.table-revenue {
+        padding-right: 46px;
+    }
+
+td.table-dot {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+tr:hover td {
+        background-color: transparent;
+    }
+
+.hidden-tr td {
+        height: 0;
+        padding: 0;
+        border-width: 0;
+        visibility: hidden;
+    }
+
+:root .interaction-item {
+    display: flex;
+    align-items: center;
+    gap: 52px;
+    padding: 10px 12px;
+    border: 1px solid #ececec;
+    border-bottom-width: 0;
+    background-color: #fff;
+    transition:
+        var(--transition-time) height,
+        var(--transition-time) padding-top,
+        var(--transition-time) padding-bottom,
+        var(--transition-time) border-top-width,
+        var(--transition-time) border-bottom-width,
+        var(--transition-time) background-color;
+}
+
+    :root .interaction-item:hover {
+        background-color: transparent;
+    }
+
+    :root .interaction-item:last-child,
+    :root .interaction-item.last-list-customer {
+        border-bottom-width: 1px;
+    }
+
+    :root .interaction-item.hidden-interaction-item {
+        height: 0;
+        padding: 0;
+        border-width: 0;
+        visibility: hidden;
+    }
+
+.list-main {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-grow: 1;
+}
+
+.list-name {
+    flex-grow: 1;
+}
+
+.list-pgm {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.expand-button {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    text-align: left;
+    width: 100%;
+    padding: 0;
+    cursor: pointer;
+}
+
+.interaction-item .project-name {
+    margin-left: 30px;
+}
+
+.list-money {
+    width: 90px;
+}
+
+.list-percent {
+    width: 40px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 36px 1fr auto auto 16px auto;
+    grid-gap: 0;
+}
+
+.grid-row {
+    display: contents;
+}
+
+.grid-row.grid-customer-row {
+        line-height: 18px;
+    }
+
+.grid-item {
+    padding: 10px 6px;
+    border: 1px solid #ececec;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    background-color: #fff;
+    transition:
+        var(--transition-time) height,
+        var(--transition-time) padding-top,
+        var(--transition-time) padding-bottom,
+        var(--transition-time) border-top-width,
+        var(--transition-time) border-bottom-width,
+        var(--transition-time) background-color;
+}
+
+.grid-item:first-child {
+        padding-left: 12px;
+        border-left-width: 1px;
+    }
+
+.grid-item:last-child {
+        padding-right: 12px;
+        border-right-width: 1px;
+    }
+
+.grid-row:hover .grid-item {
+        background-color: transparent;
+    }
+
+.grid-item.grid-revenue {
+        padding-right: 46px;
+    }
+
+.hidden-row .grid-item {
+        height: 0;
+        padding: 0;
+        border-width: 0;
+        visibility: hidden;
+    }
+
+.grid-row:last-child .grid-item,
+    .last-grid-customer .grid-item {
+        border-bottom-width: 1px;
+    }
+
+:root {
+    --transition-time: .2s;
+}
+
+body,
+html {
+    color: #333;
+    background-color: #fafafa;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.app {
+    padding: 76px 96px 96px;
+}
+
+.button-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    position: sticky;
+    top: 0;
+    background-color: #fafafa;
+    z-index: 1000;
+}
+
+.button-group-title {
+    margin-right: 16px;
+}
+
+.button {
+    border: 2px solid #ba4458;
+    background-color: #ba4458;
+    color: #fff;
+    transition: background-color var(--transition-time), color var(--transition-time);
+    border-radius: 0;
+    cursor: pointer;
+    padding: 8px 16px;
+}
+
+.button:hover {
+        background-color: #ba4458b0;
+    }
+
+.button:nth-child(2) {
+        border-radius: 8px 0 0 8px;
+    }
+
+.button:last-child {
+        border-radius: 0 8px 8px 0;
+    }
+
+.active-button {
+    background-color: #fff;
+    color: #ba4458;
+    pointer-events: none;
+    cursor: default;
+}
+
+.active-button:hover {
+        background-color: #ba445840;
+    }
+
+.section {
+    margin-bottom: 32px;
+}
+
+.section-title {
+    margin: 0 0 16px;
+}
+
+.money {
+    white-space: nowrap;
+    text-align: right;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.project-name {
+    color: #09f;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
