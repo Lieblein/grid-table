@@ -1,0 +1,75 @@
+.invoices {
+    display: grid;
+    grid-template-columns:
+        minmax(150px, auto)
+        minmax(min-content, auto)
+        minmax(min-content, auto)
+        minmax(min-content, auto)
+        minmax(min-content, auto)
+        minmax(min-content, auto)
+        minmax(0, auto)
+        61px;
+    grid-gap: 32px 0;
+}
+
+.invoice-grid-item {
+    background-color: #fff;
+    padding: 20px 20px 20px 0;
+    border: 1px solid #ccc;
+    border-left-width: 0;
+    border-right-width: 0;
+    white-space: nowrap;
+
+    &.first-invoice-row-item {
+        padding-left: 20px;
+        border-left-width: 1px;
+        border-radius: 4px 0 0 4px;
+    }
+
+    &.last-invoice-row-item {
+        border-right-width: 1px;
+        border-radius: 0 4px 4px 0;
+    }
+}
+
+.empty-invoice-grid-item {
+    padding: 0;
+}
+
+.invoice-grid-item-header {
+    font-size: 10px;
+    line-height: 12px;
+    color: #999;
+    margin-bottom: 2px;
+}
+
+.invoice-code {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.invoice-buttons {
+    display: flex;
+    margin: -4px;
+}
+
+.invoice-button {
+    border: none;
+    background-color: transparent;
+    transition: background-color var(--transition-time);
+    border-radius: 12px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    padding: 4px;
+
+    &:hover,
+    &:focus {
+        background-color: #ba445830;
+    }
+}
+
+.invoice-button-icon {
+    fill: #ba4458;
+}

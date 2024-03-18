@@ -14,3 +14,12 @@ export interface ICustomer extends IFinancialIndicator {
     name: string;
     projects: IProject[];
 }
+
+export interface IInvoice {
+    id: number;
+    signed: boolean;
+    certificate_number: string | null;
+    revenue: number;
+    completion: number;
+    end_date: string;
+}
